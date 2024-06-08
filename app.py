@@ -26,10 +26,10 @@ def index():
 @app.route('/process', methods=['POST'])
 def process():
     if 'file' not in request.files:
-        return 'No file part'
+        return 'No file part', 400
     file = request.files['file']
     if file.filename == '':
-        return 'No selected file'
+        return 'No selected file', 400
     
     if file:
         # Salvar o arquivo no servidor
