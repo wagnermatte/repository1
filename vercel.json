@@ -5,8 +5,6 @@
       "src": "app.py",
       "use": "@vercel/python",
       "config": {
-        "maxLambdaSize": "20mb",
-        "pythonVersion": "3.9",
         "installCommand": "pip3 install -r requirements.txt"
       }
     }
