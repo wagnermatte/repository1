@@ -1,13 +1,9 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "app.py",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "15mb",  // Opcional: Define o tamanho máximo da função lambda
-        "installCommand": "apt-get update && apt-get install -y python3-distutils build-essential python3-dev && pip install --upgrade pip setuptools wheel && pip install -r requirements.txt"
-      }
-    }
+    { "src": "app.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "app.py" }
   ]
 }
