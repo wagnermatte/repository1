@@ -5,7 +5,9 @@
       "src": "app.py",
       "use": "@vercel/python",
       "config": {
-        "installCommand": "apt-get update && apt-get install -y python3-distutils && apt-get install -y build-essential && apt-get install -y python3-dev && pip install -r requirements.txt"
+        "maxLambdaSize": "20mb",
+        "pythonVersion": "3.11",
+        "installCommand": "pip install -r requirements.txt"
       }
     }
   ]
