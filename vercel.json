@@ -5,7 +5,7 @@
       "src": "app.py",
       "use": "@vercel/python",
       "config": {
-        "installCommand": "pip3.12 install --disable-pip-version-check --target . --upgrade -r /vercel/path0/requirements.txt"
+        "installCommand": "pip3.12 install"
       }
     }
   ]
