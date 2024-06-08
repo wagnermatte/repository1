@@ -2,4 +2,4 @@ Python==3.12.0
 Flask==2.0.1
 pandas==1.3.3
 Werkzeug==2.0.1
-setuptools>=70.0.0s
+setuptools>=70.0.0
